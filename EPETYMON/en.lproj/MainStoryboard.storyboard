@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8dh-pm-TKb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Random-->
+        <scene sceneID="vdY-ko-a0K">
+            <objects>
+                <tableViewController id="sQh-Ny-pRg" customClass="EPRandomView" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="hyX-TZ-Oon">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DefinitionName" id="TQ6-ve-I4C">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TQ6-ve-I4C" id="puw-8p-Kcg">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sQh-Ny-pRg" id="YCu-m0-t2f"/>
+                            <outlet property="delegate" destination="sQh-Ny-pRg" id="9Jh-iq-dOp"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Random" id="0rA-1J-ekm"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aeB-GJ-WGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="948" y="80"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="Dgf-XR-dj1">
+            <objects>
+                <tableViewController id="BrF-EK-sGv" customClass="EPSearchView" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cAd-VA-C3o">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="hVI-uV-mLS">
+                            <rect key="frame" x="0.0" y="64" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DefinitionName" id="Ld0-Tg-hkt">
+                                <rect key="frame" x="0.0" y="130" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ld0-Tg-hkt" id="cpO-Tq-fin">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BrF-EK-sGv" id="AVR-z0-jQK"/>
+                            <outlet property="delegate" destination="BrF-EK-sGv" id="v9L-SJ-KNM"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Search" id="QHy-ew-5Zw"/>
+                    <connections>
+                        <outlet property="searchBar" destination="hVI-uV-mLS" id="itw-id-l2k"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Lw-VI-N9V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="750"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="doo-x9-ZPo">
+            <objects>
+                <viewController storyboardIdentifier="About" id="e7u-CZ-tSu" customClass="EPAboutView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gmh-qP-hFj"/>
+                        <viewControllerLayoutGuide type="bottom" id="8N6-BG-PSC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="heG-uo-tbq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fgG-73-wbx">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">ΒΑΣΔΕΚΗΣ Ν. ΣΤΑΥΡΟΣ
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">ΕΤΥΜΟΛΟΓΙΚΟ ΛΕΞΙΚΟ
+ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΓΛΩΣΣΑΣ
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+ΤΟ ΣΥΝΟΛΟ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΓΛΩΣΣΑΣ
+ΚΑΤΑΤΑΓΜΈΝΟ ΣΕ 20 ΠΡΩΤΑΡΧΙΚΕΣ ΡΙΖΕΣ
+
+ΕΡΓΟ ΑΠΑΛΛΑΓΜΈΝΟ ΑΠΟ ΤΗΝ ΙΝΔΟΕΥΡΩΠΑΪΚΟ-ΣΑΝΣΚΡΙΤΙΚΗ ΚΑΙ ΦΟΙΝΙΚΙΚΗ ΑΝΩΜΑΛΙΑ
+
+Ηλεκτρονική έκδοση από τον Κώστα Τερζίδη
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">Η συγγραφή του ετυμολογικού αυτού λεξικού βασίστηκε σ’ ένα κυρίως δόγμα. Το δόγμα αυτό υποστηρίζει ότι η ελληνική γλώσσα δεν δόθηκε στους ανθρώπους της από κάποιον θεό ή άνθρωπο ή μέγα νομοθέτη ή εξωγήινο, αλλά είναι   γέννημα θρέμμα των ανθρώπων που έζησαν στον συγκεκριμένο τόπο, οι οποίοι επί εκατομμύρια χρόνια την διαμόρφωσαν,ζυμώνοντας και πλάθοντας τους φθόγγους, τους οποίους εκφωνούσαν οι ίδιοι λόγω αισθημάτων ή συναισθημάτων τους, με τους ήχους που άκουγαν από τα στοιχεία της φύσης, τα ζώα και τα εργαλεία τους. Είναι δε ολοφάνερο ότι κάποτε, πριν τον Όμηρο, κάποιες γενιές Ελλήνων, με τάξη, λογική και καλλιτεχνική έφεση, διαμόρφωσαν το λογοτεχνικό αυτό εργαλείο που λέγεται ελληνική γλώσσα. Και ενώ οι γραμματικοί, φιλόλογοι και ερευνητές τακτοποίησαν αρκούντως τα δομικά της θέματα, στα ζητήματα της ετυμολογίας δεν πέτυχαν ανάλογες επιδόσεις. Αντιθέτως κατάφεραν να τα περιπλέξουν και να τα συσκοτίσουν σε αξιοπερίεργο βαθμό. Το θέμα ξεκίνησε να το ανασκάπτει πρώτος ο Πλάτων στον διάλογό του «Κρατύλος» ή «Περί ονομάτων ορθότητος λογικός». Οι ανερμάτιστες και αβάσιμες απόψεις οι οποίες διατυπώνονται εκεί, όπως του Ερμογένη ότι «όποιο όνομα δώσει κανείς σε κάποιο πρόσωπο ή πράγμα είναι το ορθό» , ή του Κρατύλου ότι «κάποια ανώτερη δύναμη έδωσε στα πράγματα τα ονόματα» , στιγμάτισαν ανεξίτηλα την επιστήμη της ετυμολογίας.
+
+Ο Ελβετός γλωσσολόγος Saussure, ο οποίος θεωρείται θεμελιωτής(;) της σύγχρονης γλωσσολογίας, αναμασώντας την άποψη του Ερμογένη, υποστηρίζει ότι «η σχέση μεταξύ του ονόματος και του πράγματος  (σημαίνοντος και σημαινομένου) είναι αυθαίρετη» .
+Τέλος η ιστορία αυτή έγινε «μαλλιά κουβάρια»  με την είσοδο στο προσκήνιο της εντελώς αβάσιμης, αστήρικτης και μετέωρης θεωρίας περί Ινδοευρωπαϊκής γλώσσας, όταν ουδείς γνωρίζει το παραμικρό περί ινδοευρωπαϊκής φυλής ή ανάλογου λαού. Το πυροτέχνημα αυτό, εκτόξευσε ο Άγγλος δικαστής και ανατολιστής Ουίλλιαμ Τζωνς το 1784. Ο Η. Λ. Τσατσόμοιρος στην εισαγωγή του βιβλίου του «Ιστορία γενέσεως της ελληνικής γλώσσας», εκδ. «Δαυλός», νομίζουμε ότι ξεκαθάρισε αρκετά το θολό αυτό τοπίο.
+
+Το ανά χείρας λεξικό ομαδοποιεί ολόκληρη την ελληνική γλώσσα σε 15 περίπου αρχικές ρίζες, οι οποίες προέρχονται είτε από ανθρώπινα φωνήματα ή κραυγές, είτε από ήχους των εργαλείων του ή ήχους των στοιχείων της φύσης. Κυρίως η γλώσσα ξεκινά την πορεία της από το νεογέννητο βρέφος. Γεγονός το οποίο ευτυχώς μπορεί να παρατηρήσει κανείς οπουδήποτε και οποτεδήποτε. Είναι δε άξιον απορίας πώς η επιστήμη της γλωσσολογίας παρέλειψε να μελετήσει, με την δέουσα προσοχή, το σημαντικότατο αυτό δρώμενο, που συμβαίνει συνεχώς γύρω μας. Μόλις το βρέφος εξέλθει από τον κόλπο της μητέρας του ξεφωνίζει ένα ατελείωτο αααα..., το οποίο εκφέρει χωρίς καμμιά προσπάθεια. Εάν εξαναγκαζόμασταν να αναγνωρίσουμε μόνο μία ρίζα της οποιασδήποτε γλώσσας, αυτή θα ήταν η ρίζα α-.
+
+Στην ελληνική γλώσσα το α εκφράζει ποικίλα αισθήματα και συναισθήματα όπως, θαυμασμό, έκπληξη, χαρά, θλίψη, απελπισία, απογοήτευση, υποψία, επιβράβευση, τέλος αναμονής κ.ά., με διαφορετική προσωδία σε κάθε περίπτωση. Για τον λόγο αυτόν γράφεται ψιλούμενο ή δασυνόμενο ή περισπώμενο. Αφομοιώνει όλα τα άλλα φωνήεντα, μετατρέπει σε α τα φωνήεντα των προηγούμενων και επόμενων συλλαβών, είναι προθεματικό, ευφωνικό, επιτατικό, αθροιστικό, μεγεθυντικό και στερητικό. Μετέχει στις περισσότερες πρωταρχικές ρίζες: βα-, δα-, μα-, πα-, τα-, φα-, χα-. Η ελληνική γλώσσα το ονόμασε άλφα εκ των άρ-ω, αρ-αρ-ίσκω, αρ-χίζω (τον λόγο), συν την ρίζα φα- (βλ. φημί, φαίνω) η οποία δηλώνει τα του λόγου. Ήταν δηλαδή άρ-φα και για το ευφωνικώτερόν του, έγινε άλφα (ρ&gt;λ).
+
+Το αμέσως επόμενο φώνημα του μικρού παιδιού είναι η συλλαβή μα. Δεν έχει κανείς παρά προφέροντας ένα μακρό ααα… να ανοιγοκλείσει τα χείλη του, για να ακούσει το μα ή κρατώντας τα κλειστά, να ακούσει το μ. Το πρώτο φωνητικό παιχνίδι του παιδιού με τα χείλη του. Από το μαμαμα…., λοιπόν του βρέφους, ονομάσθηκε έτσι η μητέρα του. Ο άνθρωπος που το γέννησε και το θρέφει, γι’ αυτό γράφεται η λέξη μαμμά με δύο μ. Αυτή βρίσκεται μαζί του τον περισσότερο χρόνο. Και επειδή η ίδια το ταΐζει, εξ αυτού προέκυψαν χίλιες δυο λέξεις που σχετίζονται με την τροφή (μαμ), όπως, μα-ζός, μα-στός, μα-σάομαι, μά-γειρος, α-μά-ω, μά-ω, μαι-μά-ομαι. Κατόπιν αφού κορεσθεί, μα-ίεται (=εξετάζει) τα πάντα γύρω του, διότι έχει έμφυτη την τάση να μα-νθάνει. Μετά τα αα… και μα, το βρέφος προφέρει το παπαπα….  Είναι η προφορά του α αρχομένη με κλειστά τα χείλη και πιεσμένο τον αέρα εντός των πνευμόνων και της στοματικής κοιλότητας. Από το παπαπα…, λοιπόν προέκυψε το πάππας, γι’ αυτό γράφεται με δύο π. Για τους λόγους αυτούς στις περισσότερες γλώσσες του κόσμου παρομοίως, ονομάζονται οι γονείς του παιδιού. Πα όμως ακούγεται και όταν κτυπάμε κάτι, βλ. πα-ίω, πή-ω (α&gt;η), πά-ταγος, πέ-τομαι (α&gt;ε).
+
+Η επόμενη συλλαβή που εκφωνεί το παιδί, μετά τις μα και πα, είναι συνήθως η νταντα…, στην οποία συμμετέχει για πρώτη φορά η γλώσσα και καθόλου τα χείλη. Το νήπιο συνεχώς φωνασκεί, ατακτεί και κάνει ζημιές. Τότε η μάμμα το κτυπά ελαφρώς, συνήθως στην παλάμη, λέγοντάς του ντά-ντά. «Τι σου έκανε η μαμά;» , «νταντά»  απαντά το μωρό. Με τον τρόπο αυτόν λαμβάνει το παιδί (παιδεύω) τα πρώτα διδάγματα (νταντάγματα). Μάλλον για τον λόγο αυτόν έχουμε αναδιπλασιασμό, στον ενικό, του ρήματος διδάσκω (βλ. δά-ω). Η ρίζα τα- (ν-τα) και εκ του ήχου του τύ-πτειν (α&gt;υ) προκύπτει (βλ. πα-τά-σσω, τύπτω, ου-τά-ω) και παράγει εκατοντάδες λέξεις.
+Οι αμέσως επόμενες συλλαβές, όπως η κα (ως και εκ του βηχός αναγκαστικώς εκφερόμενη δια του ουρανίσκου) και η λα (αποτέλεσμα κυρίως της χρήσης της γλώσσας) παράγουν χιλιάδες λέξεις, βλ. κακκάζω, κα-λέω, α-κο-ή (α&gt;ο), α-χά (κ&gt;χ), κα-ρτύνω, κα-ί, κά-ω, λά-λη, λά-σκω, λέ-γω (α&gt;ε).
+
+Ήδη, χωρίς μεγάλη δόση υπερβολής, έχουμε καταπιαστεί σχεδόν με το ήμισυ των λέξεων της ελληνικής γλώσσας, τις προερχόμενες από τις ρίζες α-, μα-, πα-, τα-, κα- και λα-. Όλες οι βασικές αυτές ρίζες, προφέρονται φυσικώς από τα νήπια, σχεδόν δίχως καμμιά σοβαρή ακουστική διδασκαλεία. Δεν είναι δυνατόν επομένως να αντέξουν στην κριτική απόψεις περί αυθαίρετης σχέσης μεταξύ σημαίνοντος και σημαινομένου ή περί ανώτερης δύναμης, η οποία έδωσε την γλώσσα στους ανθρώπους, όταν οι απόψεις αυτές εξανεμίζονται και μόνον από την συμπεριφορά του οποιουδήποτε νηπίου. Κι ας μη ξεχνάμε ποτέ ότι το ανθρώπινο γένος έζησε για εκατομμύρια χρόνια σε νοητικώς νηπιακή κατάσταση.
+
+Ο αποπροσανατολισμός της επιστήμης της γλωσσολογίας φέρει όνομα: λέγεται φοινικο-ινδο-ευρωπαϊκο-σανσκριτικός. Τουλάχιστον όσο αφορά στα ζητήματα της ελληνικής γλώσσας. Ας εξετάσουμε μια περίπτωση: Στο λεξικό Liddell &amp; Scott στη λέξη αλώπηξ διαβάζουμε: «Ο Pott παραβάλλει το σανσκριτικό lopacas, ο εσθίων θνησιμαία. Ο Κούρτιος νομίζει ότι η ομοιότης είναι τυχαία και ταυτίζει το αλώπηξ (του α λαμβανομένου ως προθεματικού ευφωνικού) με τα λιθουανικά lape, lapucus (vulpes). Η λατινική λέξις vulpus δυνατόν να είναι επίσης η αυτή με τας ανωτέρω λέξεις, αν είναι δυνατόν να έχη απολεσθή το u εν τε τη ελληνική και λιθουανική».
+
+Κατ’ αρχάς, η αλεπού δεν είναι πτωματοφάγος αλλά αρπακτικό που τρέφεται κυρίως με αρουραίους, λαγούς, κ.ά.. Και αναρωτιέται κανείς πώς είναι δυνατόν αυτά τα « ιερά τέρατα» της ετυμολογίας, να μη πρόσεξαν και να μη διερεύνησαν την περίπτωση το α να είναι προθεματικό και το υπόλοιπο η λέξη λώπη (= ιμάτιο), αφού και αλωπός λέγεται η αλεπού. Όποιος έχει παρατηρήσει αλεπού χειμώνα καιρό με την εντυπωσιακή γούνα της (οπότε το α είναι επιτατικό) και κατόπιν το καλοκαίρι όταν αποβάλλει το τρίχωμά της και φαίνεται σαν γυμνή, δηλαδή δίχως την λώπη της (οπότε το α είναι στερητικό), αμέσως θα αντιληφθεί τον λόγο για τον οποίο ονομάστηκε αλώπηξ ή αλωπός το ζώο αυτό. Ο φοινικιστής ετυμολόγος, σπεύδει να αποδώσει αμέσως την λέξη αραβόσιτος, στα Άραβ-ας, αραβ-ικός και σίτος. Όμως η αλήθεια βρίσκεται αλλού. Η λέξη προέρχεται από τα αράδα και σίτος, δηλαδή αραδόσιτος &gt; αραβόσιτος (δ&gt;β), διότι ο σίτος σπέρνεται χύδην, ενώ ο αραβόσιτος, κατά αράδες. Εισήχθη δε από την Αμερική το 1500.
+Η επιστήμη της γλωσσολογίας και της ετυμολογίας, δεν είναι αρμοδιότητα των ανθρώπων της απομόνωσης του γραφείου. Απαιτεί βασικές γνώσεις όλων των επιστημών, καλή γνώση της φύσης και μακρόχρονη διαβίωση μέσα σ’ αυτή.  Ό,τι έχει γίνει, όσον αφορά στην επιστήμη της ετυμολογίας, βασίστηκε και εξακολουθεί να βασίζεται στα πορίσματα των ανθρώπων αυτού του είδους. Για τους ανθρώπους αυτούς, εάν μία λέξη δεν θυμίζει κάτι από την σανσκριτική ή την
+φοινικική, αποτελεί μυστήριο. Το αντίθετο ούτε καν ως ενδεχόμενο δεν το συζητούν.
+
+Για την πλήρη άρση κάθε αμφιβολίας σε ό,τι αφορά στην ύποπτη δεοντολογία των φοινικιστών, θα καταδείξουμε ένα ακόμη κραυγαλέο παράδειγμα από το προαναφερθέν λεξικό, για την λέξη χιών. Γράφονται λοιπόν τα εξής: « Εκ της ρίζας χι-, ήτις ουδεμία σχέσιν έχει προς την χυ-, χεF-, χέω» . Προσέξτε πόσο κατηγορηματικοί είναι σε κάτι, για το οποίο ισχύει το ακριβώς αντίθετο, όπως θα φανεί αμέσως. Χέω σημαίνει ρίπτομαι, επισωρεύομαι, υγροποιούμαι, τήκομαι, διαλύομαι. Ακριβώς όλη η ιστορία του χιονιού, μέσα σε μια μόνο λέξη. Σε μια δηλαδή ξεκάθαρη, ολοφάνερη και κραυγάζουσα καταγωγή, εγείρεται η πιο κατηγορηματική άρνηση. Το ε σε χιλιάδες περιπτώσεις μετατρέπεται σε ι (βέομαι – βίος, έωντι – ίωντι, φωνέοι – φωνίοι, θεός – θιός, Κλέων – Κλίων, ρέων – ρίων). Και συνεχίζουν την ύποπτη πιά και αμαρτωλή ιστορία τους: «Σανσκρ. Him, hi- mas (nix, frigirous), hemantas (χειμών), Him-alaya (τα Ιμαλάϊα = οίκος χιονιού), Himavat (το πεπροικισμένο διά χιόνος), το όρος Imaus, Emodus. Λατιν. Hiems, hi- ber- nus. Ζενδ. Zim-a (hiems). Σλαυ. Zi-ma. Λιθ. ze-ma (hiems)… κ.λπ.».  Προσέξτε και το κ.λπ..  Δηλαδή εάν δεν αρκούν όλα αυτά, για να καταπεισθείτε ότι η λέξη δεν προέρχεται εκ του χέω, έχουμε κι άλλα στοιχεία προς τούτο. Θα παρατηρήσατε δε ότι ήδη έχουν εισέλθει στο παιχνίδι και τα λατινικά, τα Ζενδικά, τα Σλαυϊκά και τα Λιθουανικά. Επίσης ύποπτο φαίνεται το γεγονός, να δηλώνεται ως άγνωστη η ρίζα σε περιπτώσεις που αυτή η ίδια, δεν δείχνει καμμιά πρόθεση να αποκρυφτεί. Παράδειγμα: η λέξη άνθραξ, η οποία παράγεται ξεκάθαρα από τα ανά + θέρ-ω + άγω (μέλλ. άξ-ω), δηλαδή «αναθεραξ» &gt; άνθραξ (με αποβολή των α και ε), διότι άγει ξανά την θερμότητα, αφού και πριν θερμάνθηκε για να προκύψει από το ξύλο.
+
+Το καθεστώς το οποίο περιγράψαμε μέχρι στιγμής δυστυχώς παγιώθηκε στη χώρα της Ελλάδος. Θα αναφέρουμε προς τούτο, ένα χαρακτηριστικό παράδειγμα νεοελληνικής αλλοφροσύνης και καταλυτικής αλλοτριώσεως. Ετυμολόγος με το ψευδώνυμο Απελάτης, σε τηλεοπτικό δίαυλο της Θεσσαλονίκης, υπενθύμιζε, για μία ακόμη φορά, ότι το γράμμα άλφα προέρχεται από το φοινικικό άλεφ, που σημαίνει βόδι, διότι δεν υπάρχει ρίζα αλφ- στην ελληνική. Του τηλεφώνησα, επισημαίνοντάς του, ότι εκτός των αλφηστής, άλφιτον, αλφός, κ.λπ., υπάρχει και το αλφάνω, που σημαίνει ευρίσκω, κομίζω, κτώμαι, φέρω, όπως και το αλφάζω που σημαίνει νοώ, επινοώ. Πριν δε τελειώσω καν την τελευταία λέξη, μου απάντησε ότι «αυτά είναι μεταγενέστερα».
+
+ Η αλήθεια είναι ότι, όταν του τόνισα ότι στον Όμηρο υπάρχει το αλφάνω, ο άνθρωπος μου υποσχέθηκε πως θα ασχοληθεί με το ζήτημα και θα μου απαντήσει σ’ επομένη εκπομπή. Επί τούτου παρακολούθησα τις επόμενες εκπομπές του, αλλά ουδείς λόγος έγινε περί του ζητήματος αυτού. Σύμπασα η πανεπιστημιακή κοινότητα στην χώρα της Ελλάδος, είναι μολυσμένη από την φοινικοσανσκριτική ανωμαλία. Η κατάσταση δε αυτή λυπεί βαθιά κι αφόρητα τους Ελληνιστές ανά τον κόσμο. Ας υπενθυμίσουμε εδώ την τετράκις υποβληθείσα πρόταση των Βάσκων Ευρωβουλευτών προς το Ευρωπαϊκό Κοινοβούλιο, για την καθιέρωση της ελληνικής γλώσσας ως βασικής στην Ε.Ε., με την καλλιτεχνική διατύπωση ότι «όταν μιλάμε για Ε.Ε. άνευ της ελληνικής γλώσσας, είναι σαν να μιλάμε για χρώματα σε τυφλούς» . Εξήγησαν βεβαίως πριν,
+ότι η πρότασή τους πήγασε από την γνώση, πως όλες οι ευρωπαϊκές γλώσσες έχουν μητέρα, την ελληνική. Σήμερα που τα ελληνόπουλα μαθαίνουν περισσότερο την αγγλική απ’ ότι την ελληνική, ο αναλφαβητισμός πλανάται απ’ άκρου εις άκρον της χώρας.
+
+Παρ’ όλα αυτά νομίζουμε ότι η ελληνική γλώσσα δεν διατρέχει σοβαρό κίνδυνο, διότι κατέστη υπόθεση της παγκόσμιας κοινότητας των ανθρώπων. Ο Όμηρος είναι αθάνατος, επομένως και η γλώσσα του. Οι βάσεις δεδομένων του παρόντος έργου είναι: α) ΛΕΞΙΚΟΝΟΜΗΡΙΚΟΝ, Ε.Κ. Κοφινιώτη. β) ΜΕΓΑ ΛΕΞΙΚΟΝ ΤΗΣ ΕΛΛΗΝΙΚΗΣ ΓΛΩΣΣΗΣ Liddell &amp; Scott. γ) ΕΓΚΥΚΛΟΠΑΙΔΕΙΑ « ΠΥΡΣΟΣ». Η μέθοδος εργασίας βασίστηκε περισσότερο στην έννοια και την σημασία της κάθε λέξης και λιγότερο στα γράμματά της, επειδή είναι κατάδηλη εκ των πραγμάτων η μεταβολή τού κάθε γράμματος σε άλλα (βλ. άλφα, βήτα, κ.λπ), όπως κατά συνέπεια και η προέλευσή του από άλλα. Η χρήση ή μη μιας λέξης από τον Όμηρο, ελήφθη σοβαρά υπ’ όψιν όσο τίποτε άλλο. Η προσπάθεια κατανόησης των συνθηκών και των τρόπων διαβίωσης των πρωτόγονων ανθρώπων, όπως και των αντιδράσεών τους απέναντι στις αντιξοότητες του καθημερινού βίου, η μελέτη της σχέσης μεταξύ ανθρώπων και θηρίων, το κυνήγι, η κτηνοτροφία και ο πόλεμος, αποτελούν βασικούς άξονες στον αγώνα ανακάλυψης των ριζών της κάθε γλώσσας. Ο ετυμολόγος πρέπει να καταβάλλει μεγάλο κόπο, για να μεταφέρει το λειασμένο βότσαλο (λέξη) της παραλίας μέσω του χειμάρρου, ο οποίος το μετέφερε επί πάμπολλα χρόνια από τον βράχο της κορυφής του βουνού ως θραύσμα, για να το παρατηρήσει όχι μόνον όπως κατ’ αρχάς προέκυψε, πολυοξυγώνιο και ακανθωτό, αλλά και πώς μεταμορφώνονταν σε κάθε φάση της μεταφοράς του. Μέχρι τώρα από το δένδρο της γλώσσας διαθέταμε τα κλαδιά, τον κορμό και τα μικρά ριζίδιά του. Μας έλειπαν οι βασικές ρίζες, οι οποίες ξεκινούν από την βάση του κορμού και καταλήγουν στα ριζίδια. Το ανά χείρας λεξικό υπόσχεται ότι ανακάλυψε τις ρίζες αυτές (αγ-, αχ, βα-, δα-, ε-, ι-, κα-, λα-, μα-, πα-, τα-, φα-, χα-), παρ’ όλες τις ατέλειες, τα λάθη και τις παραλήψεις τις οποίες περιέχει.
+
+Ελπίζουμε να βρεθούν ερευνητές οι οποίοι θα δώσουν επιστημονικώτερες εξηγήσεις για τις βασικές ρίζες και θα υποδείξουν τα υφιστάμενα λάθη του λεξικού αυτού, αφού θα έχουν αρκετά πλέον στοιχεία και ερεθίσματα. </string>
+                                        <attributes>
+                                            <font key="NSFont" size="14" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fgG-73-wbx" firstAttribute="top" secondItem="heG-uo-tbq" secondAttribute="top" id="1Za-Le-tWx"/>
+                            <constraint firstItem="fgG-73-wbx" firstAttribute="bottom" secondItem="heG-uo-tbq" secondAttribute="bottom" id="Fcr-Fw-Wzl"/>
+                            <constraint firstItem="fgG-73-wbx" firstAttribute="leading" secondItem="heG-uo-tbq" secondAttribute="leading" id="OgQ-MN-dH8"/>
+                            <constraint firstItem="fgG-73-wbx" firstAttribute="trailing" secondItem="heG-uo-tbq" secondAttribute="trailing" id="TnS-k7-SxZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="men-D2-NfO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TOP-KX-4yp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1931" y="85"/>
+        </scene>
+        <!--Alphabetical-->
+        <scene sceneID="vm9-lo-13z">
+            <objects>
+                <tableViewController id="PyP-J3-jLg" customClass="EPAlphabeticalView" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="F0b-nk-Z5O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="PyP-J3-jLg" id="wsO-GY-7gW"/>
+                            <outlet property="delegate" destination="PyP-J3-jLg" id="MUR-IY-UaK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Alphabetical" id="gHa-x7-z8W"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wQy-Mi-XlH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="-573"/>
+        </scene>
+        <!--Definition-->
+        <scene sceneID="oV1-K2-w3I">
+            <objects>
+                <viewController storyboardIdentifier="Definition" hidesBottomBarWhenPushed="YES" id="620-nP-7Su" customClass="EPDefinitionView" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T3H-Bn-zNb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cih-Z0-GBQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KxI-RD-ODL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g8-lO-lag">
+                                <rect key="frame" x="0.0" y="69" width="320" height="310"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="310" id="2Fy-PU-UBC"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suO-nF-aT7">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Email" id="ZxA-IP-B9r">
+                                        <connections>
+                                            <action selector="emailDefinition:" destination="620-nP-7Su" id="saf-iY-WTh"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="KGt-v3-8b1"/>
+                                    <barButtonItem title="About" id="CMY-fh-2hf">
+                                        <connections>
+                                            <action selector="aboutAction:" destination="620-nP-7Su" id="iit-VZ-KBz"/>
+                                            <segue destination="e7u-CZ-tSu" kind="push" id="9yh-4f-oud"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKI-tI-1E4">
+                                <rect key="frame" x="20" y="20" width="280" height="41"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="xpk-i7-aeW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7g8-lO-lag" firstAttribute="trailing" secondItem="KxI-RD-ODL" secondAttribute="trailing" id="6JF-nr-fVb"/>
+                            <constraint firstItem="suO-nF-aT7" firstAttribute="trailing" secondItem="KxI-RD-ODL" secondAttribute="trailing" id="Dkc-Tb-WhC"/>
+                            <constraint firstItem="suO-nF-aT7" firstAttribute="leading" secondItem="KxI-RD-ODL" secondAttribute="leading" id="J5S-1z-rcZ"/>
+                            <constraint firstItem="pKI-tI-1E4" firstAttribute="top" secondItem="KxI-RD-ODL" secondAttribute="top" constant="20" symbolic="YES" id="O7C-9Y-XWR"/>
+                            <constraint firstAttribute="trailing" secondItem="pKI-tI-1E4" secondAttribute="trailing" constant="20" symbolic="YES" id="Zp4-s4-yEa"/>
+                            <constraint firstItem="7g8-lO-lag" firstAttribute="leading" secondItem="KxI-RD-ODL" secondAttribute="leading" id="gmx-sj-VXl"/>
+                            <constraint firstItem="pKI-tI-1E4" firstAttribute="leading" secondItem="KxI-RD-ODL" secondAttribute="leading" constant="20" symbolic="YES" id="hOy-U5-Z6b"/>
+                            <constraint firstItem="7g8-lO-lag" firstAttribute="top" secondItem="pKI-tI-1E4" secondAttribute="bottom" constant="8" symbolic="YES" id="rcg-Sh-hnD"/>
+                            <constraint firstItem="suO-nF-aT7" firstAttribute="bottom" secondItem="KxI-RD-ODL" secondAttribute="bottom" id="tmG-D7-jsW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Definition" id="3ad-HH-JCm"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="definitionView" destination="7g8-lO-lag" id="3N2-MV-KbS"/>
+                        <outlet property="nameLabel" destination="pKI-tI-1E4" id="LXj-od-yC7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLE-3C-h2W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1513" y="85"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Iqr-fx-mWx">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="8dh-pm-TKb" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="moZ-Wb-mvf">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="eVY-eV-sik" kind="relationship" relationship="viewControllers" id="aTF-fW-AQk"/>
+                        <segue destination="Bdx-JZ-Tpc" kind="relationship" relationship="viewControllers" id="OI3-sZ-y1q"/>
+                        <segue destination="7Ih-Qp-UM8" kind="relationship" relationship="viewControllers" id="V65-yv-hAU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MgN-eo-Ok1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-140" y="74"/>
+        </scene>
+        <!--alphabetical-->
+        <scene sceneID="GHO-47-596">
+            <objects>
+                <navigationController id="eVY-eV-sik" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="alphabetical" image="alphabetical.png" id="mRA-sa-Uxm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LVh-cv-sCn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PyP-J3-jLg" kind="relationship" relationship="rootViewController" id="V6q-P0-aUz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFb-uv-Ktr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="-572"/>
+        </scene>
+        <!--Random-->
+        <scene sceneID="WVM-Vh-aHM">
+            <objects>
+                <navigationController id="Bdx-JZ-Tpc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Random" image="shuffle.png" id="2RR-eA-i71"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="A4t-Uz-xqc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sQh-Ny-pRg" kind="relationship" relationship="rootViewController" id="2Ee-hp-Z2a"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="db7-sr-G5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="80"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T9p-rb-Qv6">
+            <objects>
+                <navigationController id="7Ih-Qp-UM8" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="PtB-RB-iig"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="igL-gl-32M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BrF-EK-sGv" kind="relationship" relationship="rootViewController" id="fmR-am-pl5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azs-dX-Szy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="422" y="750"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alphabetical.png" width="32" height="32"/>
+        <image name="shuffle.png" width="29" height="19"/>
+    </resources>
+</document>
